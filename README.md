@@ -1,5 +1,5 @@
 
-![Células vazias](./logo.png)
+![Células vazias](assets_documentation/logo.png)
 
 # Ficha técnica | O Mercado
 
@@ -311,7 +311,7 @@ Os dados foram organizados em 4 planilhas no Google Sheets: clientes, transacoes
     - Espaços vazios:
         - Existiam 24 espaços vazios na coluna salario_anual_dolar.
             
-            ![Células vazias](./Captura_de_Tela_2024-04-07_as_18.19.34.png)
+            ![Células vazias](assets_documentation/Captura_de_Tela_2024-04-07_as_18.19.34.png)
             
     - Procedimento:
         - Os dados dos 24 clientes que não possuíam registro sobre o salário não foram excluídos, por isso, os espaços vazios foram preenchidos com a mediana de todos os salários (sem considerar os espaços vazios).
@@ -322,12 +322,12 @@ Os dados foram organizados em 4 planilhas no Google Sheets: clientes, transacoes
     - Espaços vazios
         - Existiam 7 espaços vazios na coluna id_cliente.
             
-            ![Células vazias](./Captura_de_Tela_2024-04-07_as_18.20.57.png)
+            ![Células vazias](assets_documentation/Captura_de_Tela_2024-04-07_as_18.20.57.png)
             
     - Procedimento
         - As transações que não tinham registro dos ids dos clientes não foram excluídas. Mas, não foram consideradas para análise principal.
         - Verificou-se que as células vazias tinham valor igual a zero, pensando nisso, foi usada a fórmula =SE(A22123=0, "NC", A22123) na célula A22123 da página transacoes_ids_repetidos. Dessa forma, se a célula referente ao id dos clientes estivesse vazia, seria preenchida com "NC” (que significa “Não Cadastrado”).
-        ![Clientes não cadastrados.png](./Captura_de_Tela_2024-04-07_as_18.22.17.png)
+        ![Clientes não cadastrados.png](assets_documentation/Captura_de_Tela_2024-04-07_as_18.22.17.png)
 
 - Planilha resumo_compras
     - Espaços vazios
@@ -350,23 +350,23 @@ Os dados foram organizados em 4 planilhas no Google Sheets: clientes, transacoes
 - Planilha clientes
     - Na página clientes_original, foi criada uma coluna chamada id_cliente_unico para verificar se existiam valores repetidos na coluna id_cliente.
     - Não foram encontrados valores repetidos na coluna id_cliente.
-    ![Captura de Tela 2024-04-07 às 18.24.02.png](./Captura_de_Tela_2024-04-07_as_18.24.02.png)
+    ![Captura de Tela 2024-04-07 às 18.24.02.png](assets_documentation/Captura_de_Tela_2024-04-07_as_18.24.02.png)
 
 - Planilha transacoes
     - Na página transacoes_ids_repetidos, foi criada uma variável chamada id_cliente_unico e uma outra variável chamada id_transacao_unico. A função da coluna id_cliente_unico era retornar "repeated_id" caso existissem ids de clientes repetidos, e a função da coluna id_transacao_unico era retornar "repeated_id" caso existissem ids de transações repetidos.
     - Verificou-se que, existiam ids de clientes repetidos, porque um cliente pode fazer mais de uma transação, e que não existiam ids de transações repetidos.
         
-        ![Captura de Tela 2024-04-07 às 19.02.32.png](./Captura_de_Tela_2024-04-07_as_19.02.32.png)
+        ![Captura de Tela 2024-04-07 às 19.02.32.png](assets_documentation/Captura_de_Tela_2024-04-07_as_19.02.32.png)
         
 - Planilha resumo_compras
     - Na página resumo_compras_ids_repetidos foi criada uma coluna chamada id_cliente_unico para verificar se existiam ids de clientes repetidos.
     - Foram encontrados 9 ids de clientes repetidos.
         
-        ![Captura de Tela 2024-04-07 às 17.51.56.png](./Captura_de_Tela_2024-04-07_as_17.51.56.png)
+        ![Captura de Tela 2024-04-07 às 17.51.56.png](assets_documentation/Captura_de_Tela_2024-04-07_as_17.51.56.png)
         
     - Verificou-se também que nas linhas que continham esses ids de clientes repetidos, os outros dados também se repetiam.
         
-        ![Captura de Tela 2024-04-07 às 17.52.33.png](./Captura_de_Tela_2024-04-07_as_17.52.33.png)
+        ![Captura de Tela 2024-04-07 às 17.52.33.png](assets_documentation/Captura_de_Tela_2024-04-07_as_17.52.33.png)
         
         📍 Por isso, as linhas em que existiam ids de clientes repetidos não foram consideradas para a análise principal.
 
@@ -377,7 +377,7 @@ Os dados foram organizados em 4 planilhas no Google Sheets: clientes, transacoes
     - Foram gerados gráficos de dispersão para as variáveis idade e salario_anual_dolar:
     - Gráfico de idade:
         
-        ![Captura de Tela 2024-04-07 às 19.53.21.png](./Captura_de_Tela_2024-04-07_as_19.53.21.png)
+        ![Captura de Tela 2024-04-07 às 19.53.21.png](assets_documentation/Captura_de_Tela_2024-04-07_as_19.53.21.png)
         
         → As idades acima de 100 anos foram consideradas outliers e não foram consideradas para a análise principal. 
         
@@ -385,7 +385,7 @@ Os dados foram organizados em 4 planilhas no Google Sheets: clientes, transacoes
         
     - Gráfico de salário anual:
         
-        ![Captura de Tela 2024-04-07 às 19.56.51.png](./Captura_de_Tela_2024-04-07_as_19.56.51.png)
+        ![Captura de Tela 2024-04-07 às 19.56.51.png](assets_documentation/Captura_de_Tela_2024-04-07_as_19.56.51.png)
         
         → O salário acima de 600000 foi considerado outlier e não foi considerado para a análise principal.
 
@@ -395,7 +395,7 @@ Os dados foram organizados em 4 planilhas no Google Sheets: clientes, transacoes
 - resumo_compras
     → Foram considerados como outliers os dados acima de 1500 da coluna total_carnes.
 
-    ![Captura de Tela 2024-04-07 às 22.04.13.png](./Captura_de_Tela_2024-04-07_as_22.04.13.png)
+    ![Captura de Tela 2024-04-07 às 22.04.13.png](assets_documentation/Captura_de_Tela_2024-04-07_as_22.04.13.png)
 
     → Os outliers foram substituídos pela mediana, porque a mediana é um valor que não é afetado por valores extremos.
 
@@ -405,13 +405,13 @@ Os dados foram organizados em 4 planilhas no Google Sheets: clientes, transacoes
 
 → Pensando nisso, foi criada uma tabela na página transacoes_e_compras. Nessa tabela, usou-se a função query para obter os ids dos clientes da página clientes (presente na planilha dados_completos). Foram criadas também duas colunas, uma chamada registro_de_transacao e outra chamada registro_de_compra; estabeleceu-se uma lógica em que, se o id do cliente estivesse presente na página transacoes (presente na planilha dados_completos), o valor retornado na coluna registro_de_transacao seria "positivo”, caso contrário, o valor retornado seria “negativo”; no caso da coluna registro_de_compra, a mesma lógica foi utilizada, mas fazendo a verificação na página resumo_compras (presente na planilha dados_completos).
 
-![Captura de Tela 2024-04-07 às 22.26.51.png](./Captura_de_Tela_2024-04-07_as_22.26.51.png)
+![Captura de Tela 2024-04-07 às 22.26.51.png](assets_documentation/Captura_de_Tela_2024-04-07_as_22.26.51.png)
 
-![Captura de Tela 2024-04-07 às 22.27.22.png](./Captura_de_Tela_2024-04-07_as_22.27.22.png)
+![Captura de Tela 2024-04-07 às 22.27.22.png](assets_documentation/Captura_de_Tela_2024-04-07_as_22.27.22.png)
 
 → Dessa forma, usando a função query, foi possível obter apenas os ids dos clientes em que o resultado foi positivo para registro_de_transacao e para registro_de_compra.
 
-![Captura de Tela 2024-04-07 às 22.30.04.png](./Captura_de_Tela_2024-04-07_as_22.30.04.png)
+![Captura de Tela 2024-04-07 às 22.30.04.png](assets_documentation/Captura_de_Tela_2024-04-07_as_22.30.04.png)
 
 ## Resultados e Conclusões
 
@@ -431,11 +431,11 @@ Os dados foram organizados em 4 planilhas no Google Sheets: clientes, transacoes
 
 - idosos (+65): mais de 65 anos de idade.
 
-![Captura de Tela 2024-04-09 às 21.17.30.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.17.30.png)
+![Captura de Tela 2024-04-09 às 21.17.30.png](assets_results/Captura_de_Tela_2024-04-09_as_21.17.30.png)
 
 Observou-se que de um total 2230 clientes, 1163 se enquadravam na faixa de adultos de meia idade, 486 na faixa de idosos, 462 na faixa de idosos (+65), e 119 na faixa de adultos jovens. Somando o total de idosos e de idosos (65+), temos o valor 948. Uma hipótese para explicar o alto número de pessoas idosas é que esse valor pode estar relacionado com a região em que se encontra o estabelecimento, algumas regiões têm um maior número de habitantes idosos. 
 
-![Captura de Tela 2024-04-10 às 10.09.25.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-10_as_10.09.25.png)
+![Captura de Tela 2024-04-10 às 10.09.25.png](assets_results/Captura_de_Tela_2024-04-10_as_10.09.25.png)
 
 Uma outra hipótese seria que adultos jovens teriam menos poder aquisitivo, mas ao analisar o gráfico de salário médio para as diferentes faixas etárias, é possível notar que o salário médio dos adultos jovens era semelhante ao salário médio dos adultos de meia idade, que são o maior grupo.
 
@@ -451,7 +451,7 @@ Uma outra hipótese seria que adultos jovens teriam menos poder aquisitivo, mas 
 
 ### 1.2 Escolaridade
 
-![Captura de Tela 2024-04-09 às 21.18.11.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.18.11.png)
+![Captura de Tela 2024-04-09 às 21.18.11.png](assets_results/Captura_de_Tela_2024-04-09_as_21.18.11.png)
 
 → Apenas 257 clientes não têm ensino superior.
 
@@ -474,7 +474,7 @@ Uma outra hipótese seria que adultos jovens teriam menos poder aquisitivo, mas 
     Maior que $80000.
     
 
-![Captura de Tela 2024-04-09 às 21.19.59.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.19.59.png)
+![Captura de Tela 2024-04-09 às 21.19.59.png](assets_results/Captura_de_Tela_2024-04-09_as_21.19.59.png)
 
 De um total 2230 clientes, 1292 clientes recebiam um salário médio, 726 clientes recebiam um salário baixo (baixo_salario), e 212 clientes recebiam um salário alto (alto_salario).
 
@@ -490,13 +490,13 @@ De um total 2230 clientes, 1292 clientes recebiam um salário médio, 726 client
 
 ### 1.4 Estado Civil
 
-![Captura de Tela 2024-04-09 às 21.20.56.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.20.56.png)
+![Captura de Tela 2024-04-09 às 21.20.56.png](assets_results/Captura_de_Tela_2024-04-09_as_21.20.56.png)
 
 Do total de clientes, 1439 (64,53%) dos clientes são casados ou convivem com uma pessoa em união estável, enquanto 787 (35,29%) dos clientes são solteiros, divorciados, ou viúvos, e apenas 4 clientes responderam "outros” para o seu estado civil.
 
 ### 1.5 Crianças
 
-![Captura de Tela 2024-04-09 às 21.23.18.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.23.18.png)
+![Captura de Tela 2024-04-09 às 21.23.18.png](assets_results/Captura_de_Tela_2024-04-09_as_21.23.18.png)
 
 Do total de clientes, 1598 (71,66%) reside com, pelo menos, 1 criança. Sendo que, 944 (42,33%) clientes residem com, pelo menos, 1 criança com até 10 anos de idade, e 1080 (48,43%) clientes residem com, pelo menos, 1 criança com mais de 10 anos de idade.
 
@@ -519,7 +519,7 @@ Do total de clientes, 1598 (71,66%) reside com, pelo menos, 1 criança. Sendo qu
 
 ---
 
-![Captura de Tela 2024-04-09 às 21.28.27.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.28.27.png)
+![Captura de Tela 2024-04-09 às 21.28.27.png](assets_results/Captura_de_Tela_2024-04-09_as_21.28.27.png)
 
 Todas as faixas etárias apresentaram preferência por compras em lojas físicas, embora exista uma parcela significativa de compras pela loja virtual.
 
@@ -527,7 +527,7 @@ Todas as faixas etárias apresentaram preferência por compras em lojas físicas
 
 ---
 
-![Captura de Tela 2024-04-09 às 21.31.31.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.31.31.png)
+![Captura de Tela 2024-04-09 às 21.31.31.png](assets_results/Captura_de_Tela_2024-04-09_as_21.31.31.png)
 
 85% das pessoas não responderam à campanha.
 
@@ -563,20 +563,20 @@ Perguntas importantes para compreender o que pode ter influenciado os clientes a
 
 ### **4.2 Tabela usada como referência para fazer a segmentação:**
 
-![Captura de Tela 2024-04-09 às 21.48.39.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.48.39.png)
+![Captura de Tela 2024-04-09 às 21.48.39.png](assets_results/Captura_de_Tela_2024-04-09_as_21.48.39.png)
 
 > No conjunto de dados, foram encontradas 7 categorias das 11 descritas.
 > 
 
 ### 4.3 Distribuição dos segmentos por total de clientes
 
-![Captura de Tela 2024-04-10 às 09.37.46.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-10_as_09.37.46.png)
+![Captura de Tela 2024-04-10 às 09.37.46.png](assets_results/Captura_de_Tela_2024-04-10_as_09.37.46.png)
 
 ### **4.4 Segmentos que investiram maior valor monetário em compras e que realizaram mais transações:**
 
-![Captura de Tela 2024-04-09 às 21.51.29.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.51.29.png)
+![Captura de Tela 2024-04-09 às 21.51.29.png](assets_results/Captura_de_Tela_2024-04-09_as_21.51.29.png)
 
-![Captura de Tela 2024-04-09 às 21.52.11.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.52.11.png)
+![Captura de Tela 2024-04-09 às 21.52.11.png](assets_results/Captura_de_Tela_2024-04-09_as_21.52.11.png)
 
 **Destaque para os seguintes segmentos:**
 
@@ -611,7 +611,7 @@ Perguntas importantes para compreender o que pode ter influenciado os clientes a
 
 ### **4.5 Distribuição de faixa de salário por segmento:**
 
-![Captura de Tela 2024-04-09 às 21.53.23.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.53.23.png)
+![Captura de Tela 2024-04-09 às 21.53.23.png](assets_results/Captura_de_Tela_2024-04-09_as_21.53.23.png)
 
 → É interessante notar que uma parcela considerável dos clientes com altos salários se concentra nos segmentos de clientes fiéis e campeões, é importante investir em manter a fidelização desse grupo e trazer de volta os clientes com altos salários que se encontram no segmento "em risco”, já que o segmento "em risco” representa os clientes que compram muito e com frequência, mas pontuaram baixo para a recência.
 
@@ -625,27 +625,27 @@ Perguntas importantes para compreender o que pode ter influenciado os clientes a
 
 Em média, os produtos com maior faturamento foram o vinho e a carne. Esses produtos apresentam maior faturamento nos diferentes segmentos de clientes e nas diferentes faixas etárias.
 
-![Captura de Tela 2024-04-09 às 21.55.02.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_21.55.02.png)
+![Captura de Tela 2024-04-09 às 21.55.02.png](assets_results/Captura_de_Tela_2024-04-09_as_21.55.02.png)
 
 ### **5.2 Consumo dos clientes que residem ou não com crianças**
 
-![Captura de Tela 2024-04-09 às 22.04.01.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_22.04.01.png)
+![Captura de Tela 2024-04-09 às 22.04.01.png](assets_results/Captura_de_Tela_2024-04-09_as_22.04.01.png)
 
 Foi possível notar que os clientes que residem com crianças (embora representem 71,66% dos clientes) compram menos.
 
 Alguns fatores que podem ter influenciado esses resultados são o tempo e os recursos disponíveis. É possível inferir que pessoas que são responsáveis por crianças têm menos tempo para ir ao mercado e menos recursos financeiros.
 
-![Captura de Tela 2024-04-09 às 22.28.45.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_22.28.45.png)
+![Captura de Tela 2024-04-09 às 22.28.45.png](assets_results/Captura_de_Tela_2024-04-09_as_22.28.45.png)
 
 Ao analisar o salário anual desses dois grupos, vemos que as pessoas que residem com crianças têm um salário anual menor. Contudo, esse dado não é suficiente para afirmar que essa é a causa desse grupo de pessoas comprar menos.
 
-![Captura de Tela 2024-04-09 às 22.56.58.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_22.56.58.png)
+![Captura de Tela 2024-04-09 às 22.56.58.png](assets_results/Captura_de_Tela_2024-04-09_as_22.56.58.png)
 
 Também foi possível notar que 33.73% dos clientes que residem com crianças são solteiros, ou divorciados, ou viúvos. Talvez essas pessoas sejam as únicas pessoas adultas que têm alguma renda em suas residências, o que tornaria a rotina mais corrida e afetaria o orçamento, ou talvez sejam mães solo. Essas são apenas hipóteses.
 
 ### 5.3 Percentual de transações ao longo dos meses
 
-![Captura de Tela 2024-04-09 às 23.32.28.png](Resultados%20e%20Concluso%CC%83es%20c6b24f04887248ea820bab282471f616/Captura_de_Tela_2024-04-09_as_23.32.28.png)
+![Captura de Tela 2024-04-09 às 23.32.28.png](assets_results/Captura_de_Tela_2024-04-09_as_23.32.28.png)
 
 → A partir da análise de coorte foi possível perceber que a maior concentração de transações ocorre no 1º mês de cadastro, o que já era esperado, mas cai consideravelmente poucos meses após o cadastro. Contudo, notou-se uma melhora nessa concentração de transações ao longo dos últimos meses. 
 
